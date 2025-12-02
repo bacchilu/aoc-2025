@@ -24,7 +24,7 @@ class Direction(str, Enum):
     R = "R"
 
 
-@dataclass
+@dataclass(frozen=True)
 class Move:
     direction: Direction
     steps: int
